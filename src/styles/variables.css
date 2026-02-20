@@ -1,0 +1,93 @@
+:root {
+  /* Brand colors */
+  --color-primary: #1a365d;
+  --color-primary-light: #2c5282;
+  --color-primary-dark: #0f2744;
+
+  /* Hero section variants */
+  --color-hero-schemas: #8b1538;
+  --color-hero-agreements: #2d6a4f;
+  --color-hero-records: #e9c46a;
+  --color-hero-home: #1a365d;
+
+  /* Accent & CTAs */
+  --color-accent: #2d6a4f;
+  --color-accent-hover: #1b4332;
+  --color-accent-light: #40916c;
+  --color-button-primary: #3d568b;
+  --color-button-primary-hover: #172b63;
+
+  /* Top bar & footer */
+  --color-top-bar: #fef08a;
+  --color-top-bar-text: #1a1a1a;
+  --color-footer: #0f4c5c;
+
+  /* Highlight boxes */
+  --color-highlight-bg: #fef3e2;
+  --color-highlight-border: #e9c46a;
+
+  /* Neutrals */
+  --color-text: #1a1a1a;
+  --color-text-muted: #4a5568;
+  --color-text-inverse: #ffffff;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f7fafc;
+
+  /* Feature card accents */
+  --color-card-schemas: #a5103c;
+  --color-card-agreements: #28a16b;
+  --color-card-records: #ebb93d;
+
+  /* Typography */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* Spacing scale (4px base) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Layout */
+  --container-max: 1280px;
+  --container-padding: 1.5rem;
+  --header-height: 4rem;
+
+  /* Borders & radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+}

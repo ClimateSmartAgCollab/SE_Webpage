@@ -1,0 +1,33 @@
+/**
+ * Utility classes for common layout patterns
+ */
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.page-section {
+  padding: var(--space-16) var(--container-padding);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--space-4);
+  }
+
+  .page-section {
+    padding: var(--space-12) var(--space-4);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--space-4);
+  }
+
+  .page-section {
+    padding: var(--space-8) var(--space-4);
+  }
+}
