@@ -18,7 +18,7 @@
 
 .feature-section__title {
   font-size: var(--text-2xl);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-normal);
   color: var(--color-text);
   margin-bottom: var(--space-4);
 }

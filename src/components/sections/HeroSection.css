@@ -1,6 +1,8 @@
 .hero {
   padding: var(--space-16) var(--container-padding);
   background-color: var(--color-bg);
+  width: 55%;
+  margin: 0 auto;
 }
 
 .hero__content {
