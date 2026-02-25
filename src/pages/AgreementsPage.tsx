@@ -1,24 +1,16 @@
 import { SolutionHero } from "../components/sections/SolutionHero";
 import "./AgreementsPage.css";
 
-const HERO = {
-  title: "DRT Agreements",
-  subtitle: "Semantic Engine",
-  heading: "Helping share your work",
-  description:
-    "Describe in custom terms how you want to make your work available.",
-};
-
 const DRT_DEMO_URL = "https://climatesmartagcollab.github.io/drt-ad/";
 
 export function AgreementsPage() {
   return (
     <div className="agreements-page">
       <SolutionHero
-        title={HERO.title}
-        subtitle={HERO.subtitle}
-        heading={HERO.heading}
-        description={HERO.description}
+        title="Semantic Engine"
+        subtitle="Agreements"
+        heading="Helping share your work"
+        description="Describe in custom terms how you want to make your work available."
         logoSrc="/images/drt-logo.png"
         theme="agreements"
       />
