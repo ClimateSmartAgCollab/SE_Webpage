@@ -36,8 +36,8 @@ export function Header() {
 
   return (
     <header className="header">
-      {/* Removable alert banner */}
-      {!bannerDismissed && (
+      {/* Removable alert banner - home page only */}
+      {!bannerDismissed && location.pathname === '/' && (
         <div className="header__banner">
           <div className="header__banner-inner">
             <p className="header__banner-text">
