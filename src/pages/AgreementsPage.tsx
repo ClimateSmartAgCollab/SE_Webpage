@@ -1,11 +1,12 @@
 import { SolutionHero } from "../components/sections/SolutionHero";
+import "../styles/solution-page-layout.css";
 import "./AgreementsPage.css";
 
 const DRT_DEMO_URL = "https://climatesmartagcollab.github.io/drt-ad/";
 
 export function AgreementsPage() {
   return (
-    <div className="agreements-page">
+    <div className="solution-page agreements-page">
       <SolutionHero
         title="Semantic Engine"
         subtitle="Agreements"
@@ -14,8 +15,8 @@ export function AgreementsPage() {
         logoSrc="/images/drt-logo.png"
         theme="agreements"
       />
-      <main className="agreements-page__content">
-        <div className="agreements-page__text">
+      <main className="solution-page__content">
+        <div className="solution-page__text">
           <p>
             <span className="agreements-page__highlight">Open data</span> is an
             ideal way for research data to be made available. In support of open
@@ -45,7 +46,7 @@ export function AgreementsPage() {
           href={DRT_DEMO_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="agreements-page__cta"
+          className="solution-page__cta solution-page__cta--agreements"
         >
           Try it out
         </a>

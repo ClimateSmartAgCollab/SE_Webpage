@@ -1,12 +1,12 @@
 import { SolutionHero } from "../components/sections/SolutionHero";
 import { FeatureSection } from "../components/sections/FeatureSection";
-import "./RecordsPage.css";
+import "../styles/solution-page-layout.css";
 
 const RECORDS_URL = "https://zealous-mud-0d3297f0f.3.azurestaticapps.net/";
 
 export function RecordsPage() {
   return (
-    <div className="records-page">
+    <div className="solution-page records-page">
       <SolutionHero
         title="Semantic Engine"
         subtitle="Records"
@@ -14,8 +14,8 @@ export function RecordsPage() {
         description="Write descriptive metadata following a variety of standards to describe your work"
         theme="records"
       />
-      <main className="records-page__content">
-        <div className="records-page__text">
+      <main className="solution-page__content">
+        <div className="solution-page__text">
           <p>
             Write machine-readable metadata records that describe your work
             following many data standards.
@@ -30,23 +30,23 @@ export function RecordsPage() {
           href={RECORDS_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="records-page__cta"
+          className="solution-page__cta"
         >
           Try it out
         </a>
-        <div className="records-page__partner-card">
-          <span className="records-page__partner-card-title">
+        <div className="solution-page__partner-card solution-page__partner-card--records">
+          <span className="solution-page__partner-card-title">
             For Data Spaces
           </span>
           <br /> <br />
-          <span className="records-page__partner-card-text">
+          <span className="solution-page__partner-card-text">
             Research groups can create their own metadata templates using the
             Semantic Engine’s Schema tool. These templates guide easy‑to‑use
             forms in the Records tool that help people write accurate,
             standardized, machine‑readable information.
           </span>
           <br />
-          <span className="records-page__partner-card-text">
+          <span className="solution-page__partner-card-text">
             Metadata records generated through the Records tool can be
             incorporated into other data space infrastructure such as catalogues
             for improved searching.

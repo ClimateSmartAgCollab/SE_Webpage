@@ -1,12 +1,12 @@
 import { SolutionHero } from "../components/sections/SolutionHero";
 import { FeatureSection } from "../components/sections/FeatureSection";
-import "./SchemasPage.css";
+import "../styles/solution-page-layout.css";
 
 const SE_SCHEMAS_URL = "https://www.semanticengine.org/";
 
 export function SchemasPage() {
   return (
-    <div className="schemas-page">
+    <div className="solution-page records-page">
       <SolutionHero
         title="Semantic Engine"
         subtitle="Schemas"
@@ -14,8 +14,8 @@ export function SchemasPage() {
         description="Make your data more valuable with a data schema."
         theme="schemas"
       />
-      <main className="schemas-page">
-        <div className="schemas-page__text">
+      <main className="solution-page records-page">
+        <div className="solution-page__text">
           <p>
             Schemas work together with a dataset and describe data features such
             as column names, units, and descriptions etc.
@@ -29,16 +29,16 @@ export function SchemasPage() {
           href={SE_SCHEMAS_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="schemas-page__cta"
+          className="solution-page__cta"
         >
           Try it out
         </a>
-        <div className="schemas-page__partner-card">
-          <span className="schemas-page__partner-card-title">
+        <div className="solution-page__partner-card solution-page__partner-card--schemas">
+          <span className="solution-page__partner-card-title">
             For Data Spaces
           </span>
           <br /> <br />
-          <span className="schemas-page__partner-card-text">
+          <span className="solution-page__partner-card-text">
             Research data spaces, laboratories, departments and projects can
             customize and deploy our OCA Composer – the tool that runs all the
             schema-related tools of the Semantic Engine.

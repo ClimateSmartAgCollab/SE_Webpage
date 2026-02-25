@@ -1,0 +1,134 @@
+/* Shared layout for Agreements, Schemas, and Records solution pages */
+
+.solution-page {
+  min-height: 100%;
+}
+
+.solution-page__content {
+  padding: var(--space-12) var(--container-padding);
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.solution-page__text {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-12) var(--space-16);
+  text-align: left;
+}
+
+.solution-page__text p {
+  margin-bottom: var(--space-4);
+}
+
+.solution-page__text p:last-child {
+  margin-bottom: 0;
+}
+
+/* CTA base styles */
+.solution-page__cta {
+  display: block;
+  margin: var(--space-8) auto 0;
+  width: fit-content;
+  padding: var(--space-3) var(--space-6);
+  color: var(--color-text-inverse);
+  font-weight: var(--font-semibold);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: 2px solid;
+  transition: background-color var(--transition-fast);
+  background-color: var(--color-card-agreements);
+  border-color: var(--color-hero-agreements);
+}
+
+.solution-page__cta:hover {
+  background-color: var(--color-accent-hover);
+}
+
+
+/* Partner card */
+.solution-page__partner-card {
+  max-width: 900px;
+  margin: var(--space-8) auto 0;
+  padding: var(--space-6) var(--container-padding);
+  border: 2px solid var(--color-text);
+  text-align: left;
+}
+
+.solution-page__partner-card--schemas {
+  background-color: #ffd1d5;
+}
+
+.solution-page__partner-card--records {
+  background-color: #f2c20033;
+}
+
+.solution-page__partner-card-title {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  color: var(--color-text);
+  line-height: var(--leading-relaxed);
+}
+
+.solution-page__partner-card-text {
+  display: block;
+  margin-bottom: var(--space-2);
+  padding-left: var(--space-10);
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .solution-page__content {
+    padding: var(--space-12) var(--space-4) var(--space-12) var(--space-8);
+  }
+
+  .solution-page__text {
+    font-size: var(--text-sm);
+  }
+
+  .solution-page__cta {
+    margin-top: var(--space-6);
+    padding: var(--space-2) var(--space-5);
+    font-size: var(--text-sm);
+  }
+
+  .solution-page__partner-card {
+    margin-top: var(--space-6);
+    padding: var(--space-4) var(--space-4);
+  }
+
+  .solution-page__partner-card-text {
+    padding-left: var(--space-6);
+  }
+}
+
+@media (max-width: 480px) {
+  .solution-page__content {
+    padding: var(--space-8) var(--space-4);
+  }
+
+  .solution-page__text p {
+    margin-bottom: var(--space-3);
+  }
+
+  .solution-page__cta {
+    margin-top: var(--space-4);
+    padding: var(--space-2) var(--space-4);
+    width: 100%;
+    text-align: center;
+  }
+
+  .solution-page__partner-card {
+    margin-top: var(--space-4);
+    padding: var(--space-4) var(--space-4);
+  }
+
+  .solution-page__partner-card-text {
+    padding-left: var(--space-4);
+  }
+}
