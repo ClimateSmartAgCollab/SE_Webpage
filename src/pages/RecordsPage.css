@@ -1,0 +1,119 @@
+.records-page {
+  min-height: 100%;
+}
+
+.records-page__content {
+    padding: var(--space-12) var(--container-padding);
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.records-page__text {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--space-12) var(--space-16);
+    text-align: left;
+}
+.records-page__text p {
+  margin-bottom: var(--space-4);
+}
+.records-page__text p:last-child {
+  margin-bottom: 0;
+}
+.records-page__cta {
+    display: block;
+    margin: var(--space-8) auto 0;
+    width: fit-content;
+    padding: var(--space-3) var(--space-6);
+    background-color: var(--color-card-agreements);
+    color: var(--color-text-inverse);
+    font-weight: var(--font-semibold);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--color-hero-agreements);
+    transition: background-color var(--transition-fast);
+}
+
+.records-page__cta:hover {
+    background-color: var(--color-accent-hover);
+}
+
+
+.records-page__partner-card {
+    max-width: 900px;
+    margin: var(--space-8) auto 0;
+    padding: var(--space-6) var(--container-padding);
+    background-color: #f2c20033;
+    border: 2px solid var(--color-text);
+    text-align: left;
+}
+
+.records-page__partner-card-title {
+    display: block;
+    margin-bottom: var(--space-2);
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+    color: var(--color-text);
+    line-height: var(--leading-relaxed);
+}
+
+.records-page__partner-card-text {
+    display: block;
+    margin-bottom: var(--space-2);
+    padding-left: var(--space-10);
+    font-size: var(--text-base);
+    color: var(--color-text-muted);
+    line-height: var(--leading-relaxed);
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .records-page__content {
+        padding: var(--space-12) var(--space-4) var(--space-12) var(--space-8);
+    }
+
+    .records-page__text {
+        font-size: var(--text-sm);
+    }
+
+    .records-page__cta {
+        margin-top: var(--space-6);
+        padding: var(--space-2) var(--space-5);
+        font-size: var(--text-sm);
+    }
+
+    .records-page__partner-card {
+        margin-top: var(--space-6);
+        padding: var(--space-4) var(--space-4);
+    }
+
+    .records-page__partner-card-text {
+        padding-left: var(--space-6);
+    }
+}
+
+@media (max-width: 480px) {
+    .records-page__content {
+        padding: var(--space-8) var(--space-4);
+    }
+
+    .records-page__text p {
+        margin-bottom: var(--space-3);
+    }
+
+    .records-page__cta {
+        margin-top: var(--space-4);
+        padding: var(--space-2) var(--space-4);
+        width: 100%;
+        text-align: center;
+    }
+
+        .records-page__partner-card {
+        margin-top: var(--space-4);
+        padding: var(--space-4) var(--space-4);
+    }
+
+    .records-page__partner-card-text {
+        padding-left: var(--space-4);
+    }
+}
