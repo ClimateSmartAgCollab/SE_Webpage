@@ -18,7 +18,11 @@ export function PartnerCard({ text, listItems, buttonText, buttonHref }: Partner
             <li key={index}>{item}</li>
           ))}
         </ul>
-        <Link to={buttonHref} className="partner-card__button">
+        <Link
+          to={buttonHref}
+          className="partner-card__button"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           {buttonText}
         </Link>
       </div>

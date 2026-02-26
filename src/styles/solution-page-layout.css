@@ -56,11 +56,11 @@
 }
 
 .solution-page__partner-card--schemas {
-  background-color: #ffd1d5;
+  background-color: var(--color-partner-card-schemas);
 }
 
 .solution-page__partner-card--records {
-  background-color: #f2c20033;
+  background-color: var(--color-partner-card-records);
 }
 
 .solution-page__partner-card-title {

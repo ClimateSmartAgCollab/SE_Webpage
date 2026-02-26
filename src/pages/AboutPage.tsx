@@ -148,7 +148,11 @@ export function AboutPage() {
           </>
         }
       />
-      <Link to="/services" className="partner-card__button">
+      <Link
+        to="/services"
+        className="partner-card__button"
+        onClick={() => window.scrollTo(0, 0)}
+      >
         Partner with ADC
       </Link>
     </main>

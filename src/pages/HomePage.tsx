@@ -1,5 +1,6 @@
 import { HeroSection } from "../components/sections/HeroSection";
 import { FeatureSection } from "../components/sections/FeatureSection";
+import "./HomePage.css";
 import { FEATURE_CARDS } from "../components/sections/HeroSection";
 
 export function HomePage() {

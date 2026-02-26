@@ -83,19 +83,21 @@ export function HeroSection({
                 <p className="hero__card-description">
                   {descriptions?.[card.id] ?? card.description}
                 </p>
-                {showButtons && (
-                  <>
-                    {card.buttonHref && card.buttonText && (
-                      <Link
-                        to={card.buttonHref}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hero__card-button"
-                      >
-                        {card.buttonText}
-                      </Link>
-                    )}
-                  </>
+                {showButtons && card.buttonHref && card.buttonText && (
+                  (card.buttonHref.startsWith('http://') || card.buttonHref.startsWith('https://')) ? (
+                    <a
+                      href={card.buttonHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hero__card-button"
+                    >
+                      {card.buttonText}
+                    </a>
+                  ) : (
+                    <Link to={card.buttonHref} className="hero__card-button">
+                      {card.buttonText}
+                    </Link>
+                  )
                 )}
                 <Link to={card.learnMoreHref} className="hero__card-link">
                   Learn more

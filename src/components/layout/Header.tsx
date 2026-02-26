@@ -59,17 +59,17 @@ export function Header() {
       {/* Main navigation bar */}
       <div className="header__nav-bar">
         <div className="header__inner">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="header__partner"
             aria-label="Semantic Engine"
           >
             <img
-              src={encodeURI("/images/SemanticEngineLogo-800 (2).png")}
+              src="/images/SemanticEngineLogo-800 (2).png"
               alt="Semantic Engine"
               className="header__logo-img"
             />
-          </a>          
+          </Link>
 
           <nav className="header__nav">
 
@@ -141,7 +141,7 @@ export function Header() {
             aria-label="AGRI-FOOD DATA Canada at the University of Guelph"
           >
             <img
-              src={encodeURI("/images/FOFR1002_ADC_Logo_Colour_Full (4).png")}
+              src="/images/FOFR1002_ADC_Logo_Colour_Full (4).png"
               alt="AGRI-FOOD DATA Canada at the University of Guelph"
               className="header__partner-logo"
             />

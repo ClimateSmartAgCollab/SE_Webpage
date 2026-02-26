@@ -6,17 +6,17 @@ export function Footer() {
     <footer className="footer">
       <div className="footer__divider" aria-hidden />
       <div className="footer__inner">
-      <a
-            href="/"
+      <Link
+            to="/"
             className="footer__partner"
             aria-label="Semantic Engine"
           >
             <img
-              src={encodeURI("/images/SemanticEngineLogo-800 (2).png")}
+              src="/images/SemanticEngineLogo-800 (2).png"
               alt="Semantic Engine"
               className="footer__logo-img"
             />
-          </a>
+          </Link>
       </div>
       
     </footer>
