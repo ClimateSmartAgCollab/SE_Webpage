@@ -55,7 +55,7 @@ export function RecordsPage() {
         </div>
         <FeatureSection
           title="Write clear, machine-readable metadata records"
-          imageSrc="/images/records_WriteClearMachineReadableMetadataRecords.png"
+          imageSrc={imgPath('/images/records_WriteClearMachineReadableMetadataRecords.png')}
           imageAlt="Write clear data documentation interface"
         >
           <p>

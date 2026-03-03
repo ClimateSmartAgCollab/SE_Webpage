@@ -1,9 +1,11 @@
 import { SolutionHero } from "../components/sections/SolutionHero";
+import { FeatureSection } from "../components/sections/FeatureSection";
 import { imgPath } from "../utils/images";
 import "../styles/solution-page-layout.css";
 import "./AgreementsPage.css";
 
-const DRT_DEMO_URL = "https://climatesmartagcollab.github.io/drt-ad/";
+const DRT_DEMO_URL =
+  "https://github.com/ClimateSmartAgCollab/DRT_Design_Document/blob/main/README.md";
 
 export function AgreementsPage() {
   return (
@@ -13,7 +15,7 @@ export function AgreementsPage() {
         subtitle="Agreements"
         heading="Helping share your work"
         description="Describe in custom terms how you want to make your work available."
-        logoSrc={imgPath('/images/drt-logo.png')}
+        logoSrc={imgPath("/images/drt-logo.png")}
         theme="agreements"
       />
       <main className="solution-page__content">
@@ -51,11 +53,76 @@ export function AgreementsPage() {
         >
           Try it out
         </a>
-        <img
-          src={imgPath('/images/agreement_drt.png')}
-          alt="DRT screenshot"
-          className="agreements-page__screenshot"
-        />
+
+        <div className="solution-page__partner-card solution-page__partner-card--agreements">
+          <span className="solution-page__partner-card-title">
+            For Data Spaces
+          </span>
+          <a
+            href={DRT_DEMO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="solution-page__partner-card-link"
+          >
+            Run your own DRT
+          </a>
+          <span className="solution-page__partner-card-text">
+            For research groups, large-scale projects, or research Data Spaces,
+            deploy our Data Request Tracker (DRT) to customize questions and
+            manage ongoing communication with data requestors. The DRT enables
+            you to generate custom data agreements – both human- and
+            machine-readable – based on the responses you collect.
+          </span>
+        </div>
+        <FeatureSection
+          title="Custom Questionnaires"
+          imageSrc={imgPath("images/agreements_CustomQuestionnaires.png")}
+          imageAlt="Custom Questionnaires interface"
+        >
+          <p>
+            Streamline how you gather the information needed to decide{" "}
+            <strong> if, when, and how</strong> research data should be shared.
+            With the DRT, you can build custom questionnaires that ask exactly
+            the right questions to guide your data‑sharing decisions.
+            <br />
+            The tool is especially valuable for assessing requests involving
+            <strong> sensitive data</strong> that cannot be placed in standard
+            repositories, or for requests of{" "}
+            <strong>active research data</strong> that isn’t yet ready for broad
+            release but may be appropriate to share with close or potential
+            collaborators.
+            <br />
+            Beyond data requests, the DRT also supports managing{" "}
+            <strong>resource requests</strong>—such as sample library access—and
+            other controlled research assets.
+          </p>
+        </FeatureSection>
+        <FeatureSection
+          title="Fill Templates"
+          imageSrc={imgPath("images/agreements_FillTemplates.png")}
+          imageAlt="Fill Templates interface"
+        >
+          <p>
+            The DRT questionnaires not only help you collect the information
+            needed to make data or resource‑sharing decisions—they also allow
+            you to automatically insert those responses into custom‑generated
+            templates.
+            <br />
+            These templates can serve as draft data sharing agreements, enabling
+            you to pre‑fill and standardize key details before engaging your
+            research agreement specialists to finalize the terms.
+            <br />
+            You can also use the DRT to record high‑level agreement terms within
+            broader collaborations, creating a consistent, centralized record
+            instead of piecing together information from old email threads.
+            <br />
+            Templates can take many forms, from agreement drafts to
+            machine‑readable JSON files or SQL queries. Once a draft is
+            generated in the DRT, you can easily export it and integrate it into
+            your existing workflows, saving time and reducing manual formatting
+            work.
+          </p>
+        </FeatureSection>
       </main>
     </div>
   );

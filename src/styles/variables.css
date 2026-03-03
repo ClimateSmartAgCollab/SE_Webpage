@@ -41,7 +41,7 @@
   /* Partner card backgrounds */
   --color-partner-card-schemas: #ffd1d5;
   --color-partner-card-records: #f2c20033;
-
+  --color-partner-card-agreements: #46a02333;
   /* Typography */
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;

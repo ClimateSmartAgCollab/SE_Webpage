@@ -63,6 +63,10 @@
   background-color: var(--color-partner-card-records);
 }
 
+.solution-page__partner-card--agreements {
+  background-color: var(--color-partner-card-agreements);
+}
+
 .solution-page__partner-card-title {
   display: block;
   margin-bottom: var(--space-2);
@@ -70,6 +74,21 @@
   font-weight: var(--font-bold);
   color: var(--color-text);
   line-height: var(--leading-relaxed);
+}
+
+.solution-page__partner-card-link {
+  display: block;
+  width: fit-content;
+  margin: var(--space-4) auto;
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--color-hero-agreements);
+  text-decoration: underline;
+  text-align: center;
+}
+
+.solution-page__partner-card-link:hover {
+  color: var(--color-accent-hover);
 }
 
 .solution-page__partner-card-text {

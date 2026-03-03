@@ -47,7 +47,7 @@ export function SchemasPage() {
         </div>
         <FeatureSection
           title="Write clear data documentation"
-          imageSrc="/images/schemas_WriteClearDataDocumentation.png"
+          imageSrc={imgPath('/images/schemas_WriteClearDataDocumentation.png')}
           imageAlt="Write clear data documentation interface"
         >
           <p>
