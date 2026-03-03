@@ -81,7 +81,7 @@ export function AboutPage() {
       </FeatureSection>
       <FeatureSection
         title="Modular by design"
-        imageSrc="/images/about_modularByDesign.png"
+        imageSrc={imgPath('/images/about_modularByDesign.png')}
         imageAlt="Add meaning to data interface"
       >
         <p>

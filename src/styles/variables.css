@@ -36,7 +36,7 @@
   /* Feature card accents */
   --color-card-schemas: #94002a;
   --color-card-agreements: #46a023;
-  --color-card-records: #f2c200;
+  --color-card-records: #c79d03;
 
   /* Partner card backgrounds */
   --color-partner-card-schemas: #ffd1d5;
@@ -47,15 +47,15 @@
     "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, monospace;
 
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem;
-  --text-4xl: 2.25rem;
-  --text-5xl: 3rem;
+  --text-xs: 0.975rem;
+  --text-sm: 1.125rem;
+  --text-base: 1.325rem;
+  --text-lg: 1.525rem;
+  --text-xl: 1.6rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.125rem;
+  --text-4xl: 3rem;
+  --text-5xl: 3.5rem;
 
   --font-normal: 400;
   --font-medium: 500;

@@ -62,7 +62,7 @@ export function HomePage() {
 
       <FeatureSection
         title="Collect verified data"
-        imageSrc="/images/home4.png"
+        imageSrc={imgPath('/images/home4.png')}
         imageAlt="Data verification interface"
       >
         <p>

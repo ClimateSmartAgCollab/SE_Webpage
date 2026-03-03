@@ -13,7 +13,7 @@ export function AgreementsPage() {
         subtitle="Agreements"
         heading="Helping share your work"
         description="Describe in custom terms how you want to make your work available."
-        logoSrc="/images/drt-logo.png"
+        logoSrc={imgPath('/images/drt-logo.png')}
         theme="agreements"
       />
       <main className="solution-page__content">
