@@ -129,14 +129,50 @@ export function AgreementsPage() {
         <section className="agreements-page__partners">
           <p className="agreements-page__partners-subheading">Our Partners</p>
           <div className="agreements-page__partners-grid">
-            <div className="agreements-page__partner-box">
-              Agri-Food Data Canada
-            </div>
-            <div className="agreements-page__partner-box">Université Laval</div>
-            <div className="agreements-page__partner-box">
-              Simon Fraser University
-            </div>
-            <div className="agreements-page__partner-box">CS-DCC</div>
+            <a
+              href="https://agrifooddatacanada.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="agreements-page__partner-box"
+            >
+              <img
+                src={imgPath("images/FOFR1002_ADC_Logo_Colour_Full (4).png")}
+                alt="Agri-Food Data Canada logo"
+              />
+            </a>
+            <a
+              href="https://www.ulaval.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="agreements-page__partner-box"
+            >
+              <img
+                src={imgPath("images/laval_logo.png")}
+                alt="Université Laval logo"
+              />
+            </a>
+            <a
+              href="https://www.sfu.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="agreements-page__partner-box"
+            >
+              <img
+                src={imgPath("images/SFU_horizontal_logo_rgb.png")}
+                alt="Simon Fraser University logo"
+              />
+            </a>
+            <a
+              href="https://climatesmartagrifood.ca/cs-dcc-climate-smart-data-collaboration-centre/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="agreements-page__partner-box"
+            >
+              <img
+                src={imgPath("images/CS-DCC_Logo-EN_Colour.png")}
+                alt="CS-DCC logo"
+              />
+            </a>
           </div>
         </section>
       </main>
